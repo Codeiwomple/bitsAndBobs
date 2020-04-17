@@ -2,7 +2,7 @@ import socket
 import sys
 
 def Main():
-    host = '127.0.0.1' #Google local host
+    host = '127.0.0.1' #local host
     port = 5000
     message = "test"
     """ f"GET / HTTP/1.1\r\nHost: {host}{port}\r\n\r\n" """
@@ -14,7 +14,6 @@ def Main():
         #socket.AF_INET -> IPV4, socket.SOCK_STREAM -> TCP
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect(server)
-        #s.setblocking(0)
 
         #Send data
         s.send(message.encode('utf8'))
