@@ -1,3 +1,5 @@
+# A simple implimentation of the Rijndael cipher. Written for understanding of the algorithm, NOT performance :)
+
 import hashlib
 import numpy as np
 import argparse
